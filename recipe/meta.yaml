@@ -7,21 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - flake8 >=3
     - black >=19.3b0
 
