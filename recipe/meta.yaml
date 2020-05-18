@@ -1,6 +1,6 @@
 {% set name = "flake8-black" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "56f85aaa5a83f06a3f61e680e3b50f156b5e557ebdcb964d823d86f4c108b0c8" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "b79d8d868bd42dc2c1f27469b92a984ecab3579ad285a8708ea5f19bf6c1f3a2" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -26,14 +26,14 @@ requirements:
 
 test:
   commands:
-    - "flake8 --version | grep black:"
+    - 'flake8 --version | grep black:'
 
 about:
   home: https://github.com/peterjc/flake8-black
   license: MIT
   license_family: MIT
   license_file: LICENSE.rst
-  summary: 'Extension for flake8 for validating Python code style using black'
+  summary: Extension for flake8 for validating Python code style using black
   dev_url: https://github.com/peterjc/flake8-black
   description: |
     Black, "The Uncompromising Code Formatter", is normally run to edit your
