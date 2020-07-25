@@ -5,7 +5,7 @@ Home: https://github.com/peterjc/flake8-black
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Extension for flake8 for validating Python code style using black
 
