@@ -1,6 +1,6 @@
 {% set name = "flake8-black" %}
-{% set version = "0.2.4" %}
-{% set sha256 = "a7871bfd1cbff431a1fc91ba60ae154510c80f575e6b9a2bbb13dfb4650afd22" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "f250cc658d6dd2a2928a4f91cbdcf78836577106f688a6dafaf4f1386860eaea" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - flake8 >=3
-    - black >=19.3b0
+    - black >=22.1.0
     - toml
 
 test:
