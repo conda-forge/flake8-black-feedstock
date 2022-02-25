@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - flake8 >=3
-    - black >=19.3b0
+    - black >=22.1.0
     - toml
 
 test:
