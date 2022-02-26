@@ -1,6 +1,6 @@
 {% set name = "flake8-black" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "f250cc658d6dd2a2928a4f91cbdcf78836577106f688a6dafaf4f1386860eaea" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "6f6bf198f3f45df43245d1d1a0ba2035ee5817d167680f9e1af23cde70cb7548" %}
 
 package:
   name: {{ name|lower }}
