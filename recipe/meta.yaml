@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - flake8 >=3
-    - black >=22.1.0,<25.9.0
+    - black >=22.1.0
     # TODO - tomli not used with Python 3.11 onwards
     - tomli
 
