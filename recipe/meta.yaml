@@ -1,18 +1,18 @@
 {% set name = "flake8-black" %}
-{% set version = "0.3.6" %}
-{% set sha256 = "0dfbca3274777792a5bcb2af887a4cad72c72d0e86c94e08e3a3de151bb41c34" %}
+{% set version = "0.3.7" %}
+{% set sha256 = "a77f46d9b20414749d29a8b3c3abdc367b7b41ea977e55629467304c37c3b6ba" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - flake8 >=3
-    - black >=22.1.0
+    - black >=22.1.0,<25.9.0
     # TODO - tomli not used with Python 3.11 onwards
     - tomli
 
