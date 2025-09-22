@@ -1,6 +1,6 @@
 {% set name = "flake8-black" %}
-{% set version = "0.3.7" %}
-{% set sha256 = "a77f46d9b20414749d29a8b3c3abdc367b7b41ea977e55629467304c37c3b6ba" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "bf226868f695dee48d55ff6d7747e900709bfd6f605b7a378c70e711e3fc26cb" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - flake8 >=3
-    - black >=22.1.0,<25.9.0
+    - black >=22.1.0
     # TODO - tomli not used with Python 3.11 onwards
     - tomli
 
